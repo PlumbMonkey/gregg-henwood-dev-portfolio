@@ -109,6 +109,11 @@ a {
     width: 100%;
 }
 
+.nav-link:focus {
+    outline: 2px solid var(--teal);
+    outline-offset: 4px;
+}
+
 /* ========================================
    HERO SECTION
    ======================================== */
@@ -198,6 +203,11 @@ a {
     box-shadow: 0 0 20px rgba(0, 150, 136, 0.3);
 }
 
+.btn:focus {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+}
+
 /* ========================================
    CONTAINER & SECTIONS
    ======================================== */
@@ -209,6 +219,10 @@ a {
 
 section {
     padding: 6rem 0;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
 }
 
 section h2 {
@@ -299,6 +313,15 @@ section h2::after {
     background-color: var(--dark-bg);
 }
 
+.projects-subtitle {
+    text-align: center;
+    color: var(--gray-text);
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-weight: 400;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -382,6 +405,11 @@ section h2::after {
     width: 100%;
 }
 
+.project-link:focus {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+}
+
 /* ========================================
    CONTACT SECTION
    ======================================== */
@@ -418,6 +446,11 @@ section h2::after {
     background-color: var(--teal);
     color: var(--dark-bg);
     box-shadow: 0 8px 20px rgba(0, 150, 136, 0.3);
+}
+
+.contact-btn:focus {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
 }
 
 /* ========================================
